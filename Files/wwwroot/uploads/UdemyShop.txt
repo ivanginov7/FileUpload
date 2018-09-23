@@ -1,0 +1,39 @@
+Section 2 Lecture 15 - admin pages 9 
+Using jQuery UI sortable for drag-and-drop
+
+=========================================
+
+Section 2 Lecture 17
+Using CKEditor for textarea
+In the view must use 
+@section Scripts {
+<scrpt src="~/Scripts/ckeditor/ckeditor.js"></script>
+<script>
+   CKEDITOR.replace("elementID/name to be replaced");
+</script>
+}
+
+must use [AllowHtml] attribute on the model to be submitted
+to display as HTML you must use @Html.Raw(Model."PropWithHTML")
+instead of @Html.DisplayFor(model=>model.prop)
+
+------------------------------------------------------------
+using Roxy fileman
+needs to change the CKEditor config file
+can click on image in the CKEditor altered textarea and browse files from the server
+REMEMBER to restrict access to it with filters
+
+===================================================
+SHOPPING AREA
+section 2 lecture 18
+Create ShopController and new CATEGORY table [Name, Slug, Sorting]
+CategoryDTO class [Id, Name, Slug, Sorting] - this is the model for DB
+CategoryVM class [Id, Name, Slug, Sorting]
+
+section 2 lecture 19
+Showing a list of categories from the ShopController action
+will be doing much of the stuff with AJAX
+
+	Lecture 22
+adding the CategoryAdd Post method 
+

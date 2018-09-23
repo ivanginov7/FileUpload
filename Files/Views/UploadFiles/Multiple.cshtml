@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "Multiple";
+}
+
+<h2>Multiple</h2>
+<p>Successfuly uploaded @ViewData["filesUploaded"] file(s)</p>
+<ul>
+    @foreach (var item in ViewData["filePaths"] as List<string>)
+    {
+        <li>@item</li>
+    }
+</ul>
+
